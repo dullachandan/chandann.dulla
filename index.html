@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>D REDDY RANI CHANDAN| Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D REDDY RANI CHANDAN | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #2c3e50;
-      --secondary: #3498db;
-      --light: #ecf0f1;
-      --dark: #34495e;
-      --font: 'Segoe UI', sans-serif;
+      --primary: #1f2937;
+      --accent: #2563eb;
+      --light: #f9fafb;
+      --dark: #111827;
+      --font: 'Poppins', sans-serif;
     }
 
     body {
@@ -18,104 +19,99 @@
       font-family: var(--font);
       background-color: var(--light);
       color: var(--primary);
+      line-height: 1.5;
     }
 
     .resume-container {
-      max-width: 900px;
-      margin: 50px auto;
-      background-color: #fff;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-      padding: 40px;
+      max-width: 960px;
+      margin: 12px auto;
+      background: white;
+      padding: 16px;
       border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
     }
 
     .top-section {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       align-items: center;
-      border-bottom: 2px solid var(--light);
-      padding-bottom: 20px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px; /* Reduced from 10px */
+      margin-bottom: 8px; /* Reduced from 10px */
     }
 
     .profile-pic {
-      width: 130px;
-      height: 130px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid var(--secondary);
+      border: 2px solid var(--accent);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     }
 
     .info {
-      flex-grow: 1;
-      padding-left: 30px;
+      flex: 1;
+      margin-left: 14px;
     }
 
     .info h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 1.8em;
       color: var(--dark);
     }
 
     .info p {
-      margin: 5px 0;
-      font-size: 1em;
-    }
-
-    .links {
-      margin-top: 10px;
+      margin: 1px 0; /* Reduced from 2px */
+      font-size: 0.95em;
     }
 
     .links a {
-      margin-right: 15px;
+      margin-right: 8px;
       text-decoration: none;
-      color: var(--secondary);
-      font-weight: bold;
-      transition: 0.3s;
+      color: var(--accent);
+      font-weight: 500;
     }
 
     .links a:hover {
-      color: var(--dark);
+      text-decoration: underline;
     }
 
     .section {
-      margin-top: 30px;
+      margin-top: 12px; /* Adjusted to 12px for better visual separation while reducing overall gaps */
     }
 
     .section h2 {
-      border-bottom: 2px solid var(--light);
-      padding-bottom: 5px;
+      font-size: 1.3em;
       color: var(--dark);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-bottom: 3px;
+      padding-bottom: 1px;
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .section ul {
+      list-style-type: disc;
+      padding-left: 16px;
+      margin-top: 4px; /* Added to reduce gap above list */
+      margin-bottom: 4px; /* Added to reduce gap below list */
     }
 
-    ul li {
-      margin-bottom: 15px;
+    .section ul li {
+      margin-bottom: 2px; /* Reduced from 3px */
     }
 
-    .note {
-      font-size: 0.9em;
-      color: #888;
-      margin-top: 10px;
+    .section p {
+      margin: 2px 0; /* Adjusted from 1px 0 to 2px 0 for slight readability but still less than default */
     }
 
     @media (max-width: 768px) {
       .top-section {
         flex-direction: column;
-        align-items: center;
         text-align: center;
       }
-
       .info {
-        padding-left: 0;
-        margin-top: 15px;
-      }
-
-      .links {
-        justify-content: center;
+        margin-left: 0;
+        margin-top: 8px;
       }
     }
   </style>
@@ -123,66 +119,56 @@
 <body>
   <div class="resume-container">
     <div class="top-section">
-      <!-- Profile Picture from Google Drive -->
-      <img class="profile-pic" 
-           src="https://drive.google.com/thumbnail?id=1OYlygkW4IJ-QQV5Z-qC4sbCqLRYO5iHl"
-           alt="Profile Picture"
-           onerror="this.onerror=null; this.src='https://via.placeholder.com/130?text=Upload+Image';" />
-
-      <!-- Name and Contact -->
+      <img class="profile-pic" src="https://drive.google.com/thumbnail?id=1OYlygkW4IJ-QQV5Z-qC4sbCqLRYO5iHl" alt="Profile Picture" onerror="this.onerror=null; this.src='https://via.placeholder.com/130?text=Upload+Image';" />
       <div class="info">
         <h1>D REDDY RANI CHANDAN</h1>
         <p>dullachandan001@gmail.com</p>
-        <p>9182248361</p>
+        <p>+91 91822 48361</p>
         <div class="links">
           <a href="https://github.com/dullachandan" target="_blank">GitHub</a>
           <a href="https://www.linkedin.com/in/d-reddy-rani-chandan-04633928a/" target="_blank">LinkedIn</a>
         </div>
-        
       </div>
     </div>
 
-    <!-- Resume Sections -->
     <div class="section">
       <h2>Summary</h2>
-      <p> A computer science graduate with a strong foundation in programming fundamentals.Interested in contributing to a dynamic team and learning from experienced professionals in the field.</p>
+      <p>A computer science graduate with a strong foundation in programming fundamentals.Interested in contributing to a dynamic team and learning from experienced professionals in the field.</p>
     </div>
 
     <div class="section">
       <h2>Projects</h2>
       <ul>
-        <li>
-          <strong>Marine Animal Detection and Recognition with Advanced Deep Learning Models</strong><br/>
-          • Developed a website for marine animal detection and recognition with Advanced Deep Learning Models using MobileNet and ResNet50.<br/>
-          •	Used a Kaggle dataset, fine-tuned the models in Python, and developed the backend with Django in VS Code. The application allows users to upload images and get accurate detection results with labels and confidence .
-          <br/>
-          •	Tools Used: Python, MobileNet, ResNet50, VS Code, Django, Kaggle
-
-          - 
+        <li><strong>Marine Animal Detection and Recognition with Advanced Deep Learning Models</strong>
+          <ul>
+            <li>Developed a website for marine animal detection and recognition with Advanced Deep Learning Models using MobileNet and ResNet50.</li>
+            <li>Utilized Kaggle datasets, fine-tuned models in Python, and implemented backend using Django.</li>
+            <li>It allows users to upload images and get accurate detection results with labels and confidence scores.</li>
+            <li><strong>Tools:</strong> Python, MobileNet, ResNet50, Django, VS Code, Kaggle</li>
+          </ul>
         </li>
-        <li>
-          <strong>Weather Monitoring Application</strong><br/>
-          • Weather monitoring application designed to provide users with accurate and up-to-date weather information in a user-friendly manner and developed a weather monitoring system using React.js to provide real-time weather updates with a dynamic and interactive user interface.<br/>
-          • Integrated weather APIs to fetch data such as temperature, humidity, forecasts and utilized React.js component-based architecture for efficient data handling.
-          <br/>
-          • Tools Used: React, HTML,CSS, JavaScript, APIs
+        <li><strong>Weather Monitoring Application</strong>
+          <ul>
+            <li>Weather monitoring application designed to provide users with accurate and up-to-date weather information in a user-friendly manner and developed a weather monitoring system using React.js to provide real-time weather updates with a dynamic and interactive user interface.</li>
+            <li>Integrated weather APIs to fetch data such as temperature ,humidity ,forecasts and utilized React.js component-based architecture for efficient data handling.</li>
+            <li><strong>Tools:</strong> React, HTML, CSS, JavaScript, Weather APIs</li>
+          </ul>
         </li>
-
-        <li>
-          <strong>Face Detection with Python using OpenCV</strong><br/>
-          •	Developed a real-time face detection application utilizing Python and OpenCV libraries and implemented Haar Cascade classifiers for accurate face recognition in images and video streams.
-          <br/>
-          •	Enhanced the application with features to detect multiple faces simultaneously and integrated a user-friendly interface for easy interaction and visualization of detection results.
-          <br/>
-          •	Tools used: Python, OpenCV, NumPy 
+        <li><strong>Face Detection with Python Using OpenCV</strong>
+          <ul>
+            <li>Developed a real-time face detection application utilizing Python and OpenCV libraries and implemented Haar Cascade classifiers for accurate face recognition in images and video streams.</li>
+            <li>Enhanced the application with features to detect multiple faces simultaneously and integrated a user-friendly interface for easy interaction and visualization of detection results.</li>
+            <li><strong>Tools:</strong> Python, OpenCV, NumPy</li>
+          </ul>
+        </li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Education</h2>
-      <p><strong>B.Tech in Computer Engineering - (AI&ML) </strong><br/>Presidency University, 2020–2024</p>
-        <p><strong>Class XII</strong><br/>Sri Gayatri Junior College, 2019–2020</p>
-        <p><strong>Class X</strong><br/>Siddhartha High School, 2017–2018</p>
+      <p><strong>B.Tech in Computer Engineering (AI & ML)</strong><br/>Presidency University, 2020–2024</p>
+      <p><strong>Class XII</strong><br/>Sri Gayatri Junior College, 2019–2020</p>
+      <p><strong>Class X</strong><br/>Siddhartha High School, 2017–2018</p>
     </div>
 
     <div class="section">
@@ -192,16 +178,16 @@
       <p><strong>Databases :</strong> MySQL</p>
       <p><strong>Processes :</strong> SDLC, Agile</p>
       <p><strong>Soft Skills :</strong> Continuous Learning, Problem Solving, Adaptability</p>
+    </div>
 
-        <div class="Certifications">
-          <h2>Certifications</h2>
-          <ul>
-            <li>Python Full Stack Development – (Besant Technologies)</li>
-            <li>Introduction to Artificial Intelligence (Coursera – IBM)</li>
-            <li>Machine Learning-(Simplilearn)</li>
-
-          </ul>
-        </div>
-      </div>
-    </body>
-  </html>
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Python Full Stack Development – Besant Technologies</li>
+        <li>Introduction to Artificial Intelligence – Coursera (IBM)</li>
+        <li>Machine Learning – Simplilearn</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
